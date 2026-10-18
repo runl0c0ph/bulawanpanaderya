@@ -9,7 +9,7 @@ returns boolean
 language sql
 stable
 as $$
-  select coalesce(auth.jwt() ->> 'email', '') = lower('YOUR-ADMIN-EMAIL');
+  select coalesce(auth.jwt() ->> 'email', '') = lower('runlocoph@gmail.com');
 $$;
 
 -- Table that holds every edited text, price and photo link.
